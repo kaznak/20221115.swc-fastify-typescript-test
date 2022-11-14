@@ -1,11 +1,16 @@
 {
   "name": "swc-test",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "private": true,
   "engines": {
     "node": "^18.12.1"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:main",
+    "build:main": "swc src -d dist",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.57",
