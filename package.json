@@ -13,6 +13,7 @@
     "@types/node": "^18.11.9"
   },
   "dependencies": {
+    "@fastify/sensible": "^5.1.1",
     "fastify": "^4.9.2"
   }
 }
